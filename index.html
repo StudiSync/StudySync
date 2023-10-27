@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scaled=1.0">
+    <title>StudySinc</title>
+
+    <link rel="icon" type="image/jpg" href="images/favicon.png" />
+
+    <!-- box icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- custom css-->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <span class="logo"><img src="images/logo.png" alt="">StudySync</span>
+
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="#service">Reminders</a>
+            <a href="results.html">Progress</a>
+            <a href="signup.html">Profile</a>
+        </nav>
+    </header>
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Welcome to</h3>
+            <h1><span>StudySync!</span></h1>
+            <h3>with Personalized AI</h3>
+            <p>Revolutionizing education with AI. Personalized learning and time management for students and teachers.
+            </p>
+            <a href="schedule.html" class="btn">Get Started</a>
+            <div class="social-media">
+                <a href="signup.html" class="btn">Login</a>
+            </div>
+        </div>
+        <div class="home-img">
+            <dotlottie-player src="https://lottie.host/db851d94-e140-434c-99c7-51721e22684b/F9PEhu57nl.json"
+                background="transparent" speed="1" style="width: 500px; height: 500px;" loop
+                autoplay></dotlottie-player>
+        </div>
+    </section>
+
+    <section class="service" id="service">
+        <h2 class="heading">Our <span>Mission</span></h2>
+
+        <div class="service-container">
+            <p>At StudySync, our mission is to empower individuals, whether students or professionals, with accessible,
+                personalized education and efficient schedule management. We're committed to making lifelong learning
+                and effective planning achievable for everyone, so you can reach your goals with confidence.</p>
+            <div class="service-box">
+                <i class='bx bxl-google'></i>
+                <h3>Google</h3>
+                <p>Attempted Google Calendar integrations with existing events.</p>
+            </div>
+
+            <div class="service-box">
+                <i class='bx bxl-zoom'></i>
+                <h3>Online</h3>
+                <p>Attempted to simplify study session scheduling for seamless collaboration.</p>
+            </div>
+
+            <div class="service-box">
+                <i class='bx bxl-spotify'></i>
+                <h3>Spotify</h3>
+                <p>Attempted Integrating Spotify enables personalized study playlists, enhancing productivity.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- about me section design -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/getty.png" alt="" width="150" height="335">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading"> Beyond <span>Management</span></h2>
+            <p>Elevating Education with AI: Providing Personalized Learning and Expert Schedule Planning for Students
+                and Teachers.</p>
+        </div>
+    </section>
+
+    <!-- Review -->
+    <section class="project" id="project">
+        <h1 class="heading"> Customers' <span>Review</span></h1>
+
+        <div class="swipper review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="images/shot1.png">
+                    <p>"StudySync has been a game-changer for me. Whether I'm studying or planning my day, it's the
+                        perfect companion. Highly recommend!"</p>
+                    <h3>Rami</h3>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="images/shot2.png">
+                    <p>"StudySync greatly simplifies my life. It's a must-have for anyone who wants to excel in their
+                        studies and stay exceptionally organized."</p>
+                    <h3>Sebastian</h3>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="images/shot3.png">
+                    <p>"Studysync is a lifesaver! It's made my study sessions more effective, and the schedule
+                        management feature keeps me on track. I love it!"</p>
+                    <h3>Sofia</h3>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- message -->
+    <section class="get_in_touch" id="get_in_touch">
+        <h2 class="heading">Planning in<span> Motion!</span></h2>
+        <p>"Unlock the potential of effective learning and planning with Studysync, your free resource for personalized
+            education and seamless schedule management."</p>
+        <a href="schedule.html" class="btn">Get Started</a>
+    </section>
+    <!-- footer design -->
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Made by Sebastian Tejada, Rami Seid, and Sofia Tejada.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <!-- custom js -->
+    <script>src = "script.js"</script>
+
+</body>
+
+</html>
