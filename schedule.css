@@ -327,3 +327,23 @@ form button {
     }
   }
   
+  @media only screen and (min-width: 900px) and (max-width: 414px) {
+    .container {
+        width: 600px; /* Adjust the width as needed */
+        height: 600px; /* Adjust the height as needed */
+    }
+    
+    h3 {
+        font-size: 24px; /* Adjust the font size as needed */
+    }
+    
+    .container form {
+        width: 480px; /* Adjust the width as needed */
+        top: 150px; /* Adjust the top position as needed */
+        left: 60px; /* Adjust the left position as needed */
+    }
+    
+    form input {
+        font-size: 18px; /* Adjust the font size as needed */
+    }
+}
