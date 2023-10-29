@@ -510,8 +510,13 @@ span {
   }
   
   @media (max-width: 768px) {
-    #menu-icon {
-      display: block;
+    .header {
+        padding: 2rem 3%; /* Adjust padding for the header */
+    }
+
+    .home-img img {
+        width: 50vw; /* Adjust the image width for smaller screens */
+        margin-top: 4rem; /* Adjust margin-top for spacing */
     }
   
     .navbar {
