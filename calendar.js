@@ -261,7 +261,7 @@ function updateEvents(date) {
   });
   if (events === "") {
     events = `<div class="no-event">
-            <h3>No Events</h3>
+            <h3>Loading AI Generated Content</h3>
         </div>`;
   }
   eventsContainer.innerHTML = events;
@@ -454,3 +454,22 @@ function convertTime(time) {
   time = timeHour + ":" + timeMin + " " + timeFormat;
   return time;
 }
+
+const { response } = require("express");
+
+function replaceNewlinesWithSpace(inputString) {
+  // Use the replace() method with a regular expression to replace all "\n" with a space
+  return inputString.replace(/\\n/g, '');
+}
+
+async function getResponse() {
+  const response = await fetch('http://localhost:8000/');
+  const data = await response.json();
+  const hiElement = document.getElementById("hi");
+  const originalString = JSON.stringify(data);
+  hiElement.innerText = replaceNewlinesWithSpace(originalString);
+  console.log(hiElement.innerText);
+}
+
+// Call the getResponse function
+getResponse();

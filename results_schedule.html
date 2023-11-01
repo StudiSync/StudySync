@@ -15,7 +15,7 @@
     <title>Calendar with Events</title>
 </head>
 
-<body>
+<body onload="getResponse()">
     <header class="header">
         <span class="logo"><img src="images/logo.png" alt="">StudySync</span>
 
@@ -47,7 +47,7 @@
                     <div>Fri</div>
                     <div>Sat</div>
                 </div>
-                <div class="days"></div>
+                <div class="days" onclick="getResponse()"></div>
                 <div class="goto-today">
                     <div class="goto">
                         <input type="text" placeholder="mm/yyyy" class="date-input" />
@@ -62,7 +62,7 @@
                 <div class="event-day">wed</div>
                 <div class="event-date">12th december 2022</div>
             </div>
-            <div class="events"></div>
+            <div class="events" id='hi'></div>
             <div class="add-event-wrapper">
                 <div class="add-event-header">
                     <div class="title">Add Event</div>
@@ -90,9 +90,9 @@
     </div>
 
     <div class="credits">
-      <p>
-        Created by Sebastian, Rami, and Sofia
-      </p>
+        <p>
+            Created by Sebastian, Rami, and Sofia
+        </p>
     </div>
 
     <script src="calendar.js"></script>
