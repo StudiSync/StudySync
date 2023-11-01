@@ -468,7 +468,7 @@ async function getResponse() {
   const hiElement = document.getElementById("hi");
   const originalString = JSON.stringify(data);
   hiElement.innerText = replaceNewlinesWithSpace(originalString);
-  console.log(hiElement.innerText);
+  hiElement.style.fontSize = "14px";
 }
 
 // Call the getResponse function
